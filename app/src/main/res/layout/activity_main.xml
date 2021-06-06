@@ -12,8 +12,21 @@
         android:layout_height="match_parent"
         mapbox:mapbox_cameraTargetLat="52.6369"
         mapbox:mapbox_cameraTargetLng="1.1398"
-        mapbox:mapbox_styleUrl = "mapbox://styles/mapbox/streets-v10"
-        mapbox:mapbox_cameraZoom = "12"
-        />
+        mapbox:mapbox_cameraZoom="12"
+        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:enabled="false"
+        android:text="@string/start_navigating"
+        android:textColor="@color/mapboxGrayLight"
+        mapbox:layout_constraintBottom_toBottomOf="parent"
+        mapbox:layout_constraintEnd_toEndOf="parent"
+        mapbox:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
